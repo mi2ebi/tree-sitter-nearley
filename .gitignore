@@ -1,0 +1,13 @@
+Cargo.*
+bindings/
+node_modules/
+Makefile
+binding.gyp
+go.mod
+setup.py
+pyproject.toml
+Cargo.*
+build/
+packag*.json
+CMakeLists.txt
+Package.swift
