@@ -53,9 +53,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "directive_name",
+          "named": true
+        },
         {
           "type": "directive_value",
           "named": true
@@ -425,6 +429,10 @@
   },
   {
     "type": "cont",
+    "named": true
+  },
+  {
+    "type": "directive_name",
     "named": true
   },
   {

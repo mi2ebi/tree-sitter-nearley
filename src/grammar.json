@@ -42,8 +42,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "PATTERN",
-          "value": "@[a-zA-Z_]\\w*"
+          "type": "SYMBOL",
+          "name": "directive_name"
         },
         {
           "type": "SYMBOL",
@@ -54,6 +54,10 @@
           "value": "\\n"
         }
       ]
+    },
+    "directive_name": {
+      "type": "PATTERN",
+      "value": "@[a-zA-Z_]\\w*"
     },
     "directive_value": {
       "type": "CHOICE",

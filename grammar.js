@@ -8,7 +8,8 @@ module.exports = grammar({
     ),
     comment: $ => /#[^\n]*/,
 
-    directive: $ => seq(/@[a-zA-Z_]\w*/, $.directive_value, /\n/),
+    directive: $ => seq($.directive_name, $.directive_value, /\n/),
+    directive_name: $ => /@[a-zA-Z_]\w*/,
     directive_value: $ => choice($.identifier, $.string),
 
     cont_block: $ => seq("@{%", optional($.cont), "%}"),
